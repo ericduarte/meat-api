@@ -1,11 +1,16 @@
 {
   "name": "meat-api",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "Api de Restaurantes",
+=======
+  "description": "API de Restaurantes",
+>>>>>>> e6f8617125e0535f5180993aa3e262d09aac3aa4
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ericduarte/meat-api.git"
@@ -28,5 +33,15 @@
     "@types/mongoose": "4.7.32",
     "@types/restify": "5.0.6",
     "@types/restify-errors": "4.3.2"
+=======
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "restify": "6.3.4"
+  },
+  "devDependencies": {
+    "@types/restify": "5.0.6"
+>>>>>>> e6f8617125e0535f5180993aa3e262d09aac3aa4
   }
 }
