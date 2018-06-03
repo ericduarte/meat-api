@@ -1,16 +1,11 @@
 {
   "name": "meat-api",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "Api de Restaurantes",
-=======
-  "description": "API de Restaurantes",
->>>>>>> e6f8617125e0535f5180993aa3e262d09aac3aa4
-  "main": "index.js",
+  "main": "./dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ts-node jest.startup.ts"
   },
-<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ericduarte/meat-api.git"
@@ -18,6 +13,24 @@
   "keywords": [],
   "author": "Eric",
   "license": "ISC",
+  "jest": {
+    "globals":{
+      "address":"http://localhost/3002"
+    },  
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/ericduarte/meat-api/issues"
   },
@@ -30,18 +43,16 @@
   },
   "devDependencies": {
     "@types/bcrypt": "1.0.0",
+    "@types/jest": "22.1.2",
     "@types/mongoose": "4.7.32",
     "@types/restify": "5.0.6",
-    "@types/restify-errors": "4.3.2"
-=======
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "restify": "6.3.4"
-  },
-  "devDependencies": {
-    "@types/restify": "5.0.6"
->>>>>>> e6f8617125e0535f5180993aa3e262d09aac3aa4
+    "@types/restify-errors": "4.3.2",
+    "@types/supertest": "2.0.4",
+    "jest": "22.4.2",
+    "jest-cli": "22.4.2",
+    "supertest": "3.0.0",
+    "ts-jest": "22.0.4",
+    "ts-node": "5.0.1",
+    "typescript": "2.6.2"
   }
 }
