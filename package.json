@@ -14,9 +14,9 @@
   "author": "Eric",
   "license": "ISC",
   "jest": {
-    "globals":{
-      "address":"http://localhost/3002"
-    },  
+    "globals": {
+      "address": "http://localhost/3002"
+    },
     "testEnvironment": "node",
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
